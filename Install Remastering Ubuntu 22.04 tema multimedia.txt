@@ -1,0 +1,39 @@
+Install Remastering Ubuntu 22.04 dengan Cubic tema multimedia  :
+
+
+1. Install Cubic
+	sudo apt-add-repository ppa:cubic-wizard/release
+	sudo apt update
+	sudo apt install cubic
+
+2. Buat folder untuk Cubic
+	mkdir -p /home/android/remastering
+
+3. Buka Cubic lalu pilih folder Cubic yang telah dibuat sebelumnya, kemudian masukkan iso yang ingin di customize lalu atur versi, nama, direktori, volume, id, release, dan disk name sesuai yang diinginkan.
+
+4. Install aplikasi
+	a. Chrome
+		- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+ 		- sudo apt install ./google-chrome-stable_current_amd64.deb
+5. Mengubah logo, wallpaper, dan tema
+	- Ubah logo
+		- cd /usr/share/icons/hicolor/256x256/apps
+		- buka gambar yang ingin dijadikan logo, drag+copy ke terminal
+		- mv multimedialogo.png ubuntu-logo-icon.png
+		- ls
+		- cd
+	- Ubah wallpaper
+		- cd /usr/share/backgrounds 
+		- buka gambar yg ingin dijadikan wallpaper, drag+copy ke terminal
+		- mv wallaper.png warty-final-ubuntu.png
+		- ls
+		- cd
+	- Ubah tema
+		apt install plymouth-themes
+
+6. Save & Generate
+
+7. Install file iso baru
+
+
+Selesai, terimakasih!!!
